@@ -1,18 +1,12 @@
-'use strict';
-
-
 var mongoose = require('mongoose'),
     Task = mongoose.model('Tasks');
-
 exports.list_all_tasks = function (req, res) {
     Task.find({}, function (err, tasks) {
         if (err)
             res.send(err);
-        res.json(task);
+        res.json(tasks);
     });
 };
-
-
 
 exports.create_a_task = function (req, res) {
     var new_task = new Task(req.body);
@@ -23,7 +17,6 @@ exports.create_a_task = function (req, res) {
     });
 };
 
-
 exports.read_a_task = function (req, res) {
     Task.findById(req.params.taskId, function (err, task) {
         if (err)
@@ -31,7 +24,6 @@ exports.read_a_task = function (req, res) {
         res.json(task);
     });
 };
-
 
 exports.update_a_task = function (req, res) {
     Task.findOneAndUpdate({
@@ -45,10 +37,7 @@ exports.update_a_task = function (req, res) {
     });
 };
 
-
 exports.delete_a_task = function (req, res) {
-
-
     Task.remove({
         _id: req.params.taskId
     }, function (err, task) {
