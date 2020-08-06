@@ -1,8 +1,8 @@
 var express = require('express'),
 app = express(),
-port = process.env.PORT || 3000,
+port = process.env.PORT || 5000,
 mongoose = require('mongoose'),
-Task = require('./api/models/todoListModel'), //Loading model here
+Task = require('./api/models/TodoListModel'), //Loading model here
 bodyParser = require('body-parser');
 const passport = require("passport");
 
