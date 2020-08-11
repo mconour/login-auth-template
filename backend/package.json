@@ -1,7 +1,7 @@
 {
-  "name": "express-api",
+  "name": "todoListApi",
   "version": "1.0.0",
-  "description": "A simple express api",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "client-install": "npm install --prefix ../frontend",
@@ -10,16 +10,9 @@
     "client": "npm start --prefix ../frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mconour/express-api.git"
-  },
-  "author": "MC",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mconour/express-api/issues"
-  },
-  "homepage": "https://github.com/mconour/express-api#readme",
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
