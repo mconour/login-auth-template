@@ -22,11 +22,9 @@ componentWillReceiveProps(nextProps) {
       });
     }
   }
-  
 onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
-
 onSubmit = e => {
     e.preventDefault();
 const newUser = {
@@ -37,7 +35,6 @@ const newUser = {
     };
 this.props.registerUser(newUser, this.props.history); 
   };
-
 render() {
     const { errors } = this.state;
 return (
@@ -134,18 +131,15 @@ return (
     );
   }
 }
-
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
-
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
 });
-
 export default connect(
   mapStateToProps,
   { registerUser }
