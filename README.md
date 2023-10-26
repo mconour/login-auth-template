@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
 
-A comprehensive full-stack template for implementing user authentication and authorization in your web applications. This template provides a strong foundation for securing your application, including user registration, login, and role-based access control.
+A comprehensive full-stack (MERN) template for implementing user authentication and authorization in your web applications. This template provides a strong foundation for securing your application, including user registration, login, and role-based access control.
 
 ## Features
 
