@@ -1,12 +1,3 @@
-# login & authorization full-stack template
-
-
-```
-Frameworks & Libraries: Express.js, React.js, Node.js
-Other: MongoDB, Passport & JWTs
-```
-
-
 # Login & Authorization Full-Stack Template
 
 ![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-brightgreen.svg)
